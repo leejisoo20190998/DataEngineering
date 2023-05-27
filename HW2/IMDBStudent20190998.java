@@ -116,7 +116,7 @@ public class IMDBStudent20190998 {
 		}
 		conf.setInt("topK", topK);
 		Job job = new Job(conf, "TopK");
-		job.setJarByClass(TopK.class);
+		job.setJarByClass(IMDBStudent20190998.class);
 		job.setMapperClass(TopKMapper.class);
 		job.setReducerClass(TopKReducer.class);
 		job.setNumReduceTasks(1);
